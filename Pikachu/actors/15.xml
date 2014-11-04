@@ -47,13 +47,16 @@
         <real id="compoundConditionKind">0</real>
       </attributes>
       <conditions>
-        <condition id="id691140" eventType="mouse button" pluginPredicateTypeIndex="0" class="MouseButton">
+        <condition id="id311805" eventType="key" pluginPredicateTypeIndex="0" class="Key">
           <attributes>
             <text id="name">default name</text>
             <index id="conditionType">0</index>
           </attributes>
-          <predicate type="mouse" mouseState="down">
-            <attributes />
+          <predicate type="key">
+            <attributes>
+              <text id="mode">down</text>
+              <text id="keyString">left</text>
+            </attributes>
           </predicate>
         </condition>
       </conditions>
@@ -62,7 +65,7 @@
           <attributes>
             <text id="name">Change Scene</text>
             <text id="bundleName">ChangeScene.behavior</text>
-            <text id="sceneKey">id280037</text>
+            <text id="sceneKey">id537928</text>
             <boolean id="enableAdvertisement">false</boolean>
           </attributes>
         </behavior>

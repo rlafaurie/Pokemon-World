@@ -21,7 +21,7 @@
     <image id="image">fsd gsdfgsdfgsdf</image>
     <text id="tags">Good</text>
     <boolean id="preloadArt">true</boolean>
-    <integer id="id975023" name="Livez">0</integer>
+    <integer id="id975023" name="Livez">100</integer>
   </attributes>
   <behaviors>
     <behavior id="id737817" class="CompoundBehavior" enabled="true">

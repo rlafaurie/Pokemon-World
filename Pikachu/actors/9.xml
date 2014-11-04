@@ -217,7 +217,7 @@
       <attributes>
         <real id="density">1</real>
         <real id="friction">3</real>
-        <real id="restitution">1</real>
+        <real id="restitution">0.1</real>
         <boolean id="fixedRotation">false</boolean>
         <boolean id="movable">true</boolean>
         <enumeration id="collisionShape">0</enumeration>
