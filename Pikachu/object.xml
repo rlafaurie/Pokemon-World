@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<game GSCVersion="0.10.4" PGFVersion="0.19" title="My Great Project">
+  <tags />
+  <resolutionIndependence>0</resolutionIndependence>
+  <instructions>Add game instructions here.</instructions>
+  <resolution>0</resolution>
+  <longDescription>A simple game.</longDescription>
+  <prototypes>
+    <actor id="id516820" />
+    <actor id="id643858" />
+    <actor id="id755797" />
+    <actor id="id270510" />
+    <actor id="id464925" />
+    <actor id="id478313" />
+    <actor id="id669103" />
+    <actor id="id973115" />
+    <actor id="id330648" />
+    <actor id="id898340" />
+    <actor id="id192023" />
+    <actor id="id742336" />
+    <actor id="id176263" />
+    <actor id="id253112" />
+    <actor id="id795389" />
+    <actor id="id245546" />
+    <actor id="id285053" />
+    <actor id="id829513" />
+    <actor id="id199949" />
+    <actor id="id925807" />
+  </prototypes>
+  <plugins />
+  <scenes>
+    <scene id="id635015" />
+    <scene id="id754798" />
+    <scene id="id280037" />
+    <scene id="id537928" />
+    <scene id="id592974" />
+    <scene id="id166123" />
+  </scenes>
+  <attributes>
+    <text id="name">default name</text>
+    <real id="time">0</real>
+    <size id="displaySize">
+      <real id="width">480</real>
+      <real id="height">320</real>
+    </size>
+    <text id="actorTags">All	Good	Evil</text>
+  </attributes>
+</game>
