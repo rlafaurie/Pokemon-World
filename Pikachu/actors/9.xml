@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<actor id="id330648" PGFVersion="0.19" GSCVersion="0.10.4">
+<actor id="id192023" PGFVersion="0.19" GSCVersion="0.10.4">
   <attributes>
-    <text id="name">Gyrados</text>
+    <text id="name">ShadowBall</text>
     <real id="time">0</real>
     <point id="position">
       <real id="x">0</real>
       <real id="y">0</real>
     </point>
     <size id="size">
-      <real id="width">632</real>
-      <real id="height">775</real>
+      <real id="width">20</real>
+      <real id="height">20</real>
     </size>
     <angle id="rotation">0</angle>
     <color id="color">
@@ -18,48 +18,28 @@
       <real id="blue">1</real>
       <real id="alpha">1</real>
     </color>
-    <image id="image">130Gyarados_AG_anime</image>
-    <text id="tags" />
+    <image id="image">df dgdfgdg</image>
+    <text id="tags">Evil</text>
     <boolean id="preloadArt">true</boolean>
-    <integer id="id315508" name="Livezz">100</integer>
   </attributes>
   <behaviors>
-    <behavior id="id160879" class="TimerBehavior" enabled="true">
+    <behavior id="id842322" class="AccelerateBehavior" enabled="true">
       <attributes>
-        <text id="name">Timer</text>
-        <text id="bundleName">Timer.behavior</text>
-        <index id="timerType">0</index>
-        <real id="interval">
-          <expression>
-            <string>random(.1, 1.2)</string>
-          </expression>
-        </real>
-        <boolean id="runToCompletion">false</boolean>
+        <text id="name">Accelerate</text>
+        <text id="bundleName">Accelerate.behavior</text>
+        <angle id="direction">180</angle>
+        <index id="space">1</index>
+        <real id="acceleration">100</real>
       </attributes>
-      <behaviors>
-        <behavior id="id872083" class="SpawnAction" enabled="true">
-          <attributes>
-            <text id="name">Spawn Actor</text>
-            <text id="bundleName">Spawn.behavior</text>
-            <text id="prototypeKey">id192023</text>
-            <angle id="direction">180</angle>
-            <index id="directionSpace">0</index>
-            <real id="x">0</real>
-            <real id="y">-10</real>
-            <index id="positionSpace">0</index>
-            <index id="layerOrder">0</index>
-          </attributes>
-        </behavior>
-      </behaviors>
     </behavior>
-    <behavior id="id339865" class="RuleBehavior" enabled="true">
+    <behavior id="id864736" class="RuleBehavior" enabled="true">
       <attributes>
         <text id="name">Rule</text>
         <text id="bundleName">Rule.behavior</text>
         <real id="compoundConditionKind">0</real>
       </attributes>
       <conditions>
-        <condition id="id888709" eventType="overlaps or collides" pluginPredicateTypeIndex="0" class="Collision">
+        <condition id="id251947" eventType="overlaps or collides" pluginPredicateTypeIndex="0" class="Collision">
           <attributes>
             <text id="name">default name</text>
             <index id="conditionType">0</index>
@@ -74,117 +54,13 @@
         </condition>
       </conditions>
       <behaviors>
-        <behavior id="id852863" class="ChangeAttributeAction" enabled="true">
+        <behavior id="id757224" class="DestroyAction" enabled="true">
           <attributes>
-            <text id="name">Change Attribute</text>
-            <text id="bundleName">ChangeAttribute.behavior</text>
-            <text id="targetAttribute">self.attributes.id315508</text>
-            <text id="RHS">
-              <expression>
-                <reference keypath="self.attributes.id315508" />
-                <string>-10</string>
-              </expression>
-            </text>
+            <text id="name">Destroy</text>
+            <text id="bundleName">Destroy.behavior</text>
           </attributes>
         </behavior>
       </behaviors>
-    </behavior>
-    <behavior id="id407809" class="RuleBehavior" enabled="true">
-      <attributes>
-        <text id="name">Rule</text>
-        <text id="bundleName">Rule.behavior</text>
-        <real id="compoundConditionKind">0</real>
-      </attributes>
-      <conditions>
-        <condition id="id450648" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
-          <attributes>
-            <index id="conditionType">1</index>
-            <text id="subjectAttribute">self.attributes.id315508</text>
-            <text id="name">default name</text>
-          </attributes>
-          <predicate type="number">
-            <attributes>
-              <text id="operator">&lt;=</text>
-              <real id="RHS">0</real>
-            </attributes>
-          </predicate>
-        </condition>
-      </conditions>
-      <behaviors>
-        <behavior id="id654852" class="ChangeSceneAction" enabled="true">
-          <attributes>
-            <text id="name">Change Scene</text>
-            <text id="bundleName">ChangeScene.behavior</text>
-            <text id="sceneKey">id592974</text>
-            <boolean id="enableAdvertisement">false</boolean>
-          </attributes>
-        </behavior>
-      </behaviors>
-    </behavior>
-    <behavior id="id104790" class="TimerBehavior" enabled="true">
-      <attributes>
-        <text id="name">Timer</text>
-        <text id="bundleName">Timer.behavior</text>
-        <index id="timerType">0</index>
-        <real id="interval">
-          <expression>
-            <string>random(1, 3)</string>
-          </expression>
-        </real>
-        <boolean id="runToCompletion">false</boolean>
-      </attributes>
-      <behaviors>
-        <behavior id="id862194" class="RuleBehavior" enabled="true">
-          <attributes>
-            <text id="name">Rule</text>
-            <text id="bundleName">Rule.behavior</text>
-            <real id="compoundConditionKind">0</real>
-          </attributes>
-          <conditions>
-            <condition id="id762345" eventType="overlaps or collides" pluginPredicateTypeIndex="0">
-              <attributes>
-                <index id="conditionType">0</index>
-              </attributes>
-              <predicate type="collision">
-                <attributes>
-                  <text id="prototypeKey">id669103</text>
-                  <text id="actorTag" />
-                  <real id="mode">0</real>
-                </attributes>
-              </predicate>
-            </condition>
-          </conditions>
-          <behaviors>
-            <behavior id="id854667" class="ChangeVelocityAction" enabled="true">
-              <attributes>
-                <text id="name">Actual Jump</text>
-                <text id="bundleName">ChangeVelocity.behavior</text>
-                <angle id="direction">90</angle>
-                <index id="space">1</index>
-                <real id="speed">175</real>
-              </attributes>
-            </behavior>
-          </behaviors>
-        </behavior>
-      </behaviors>
-    </behavior>
-    <behavior id="id138924" class="AccelerateBehavior" enabled="true">
-      <attributes>
-        <text id="name">Accelerate</text>
-        <text id="bundleName">Accelerate.behavior</text>
-        <angle id="direction">270</angle>
-        <index id="space">1</index>
-        <real id="acceleration">300</real>
-      </attributes>
-    </behavior>
-    <behavior id="id128148" class="CollideBehavior" enabled="true">
-      <attributes>
-        <text id="name">Collide</text>
-        <text id="bundleName">Collide.behavior</text>
-        <text id="prototypeKey">id669103</text>
-        <text id="actorTag">Ground</text>
-        <index id="mode">0</index>
-      </attributes>
     </behavior>
   </behaviors>
   <aspects>
@@ -217,10 +93,10 @@
       <attributes>
         <real id="density">1</real>
         <real id="friction">3</real>
-        <real id="restitution">0.1</real>
+        <real id="restitution">1</real>
         <boolean id="fixedRotation">false</boolean>
         <boolean id="movable">true</boolean>
-        <enumeration id="collisionShape">0</enumeration>
+        <enumeration id="collisionShape">1</enumeration>
         <real id="drag">0</real>
         <real id="angularDrag">0</real>
       </attributes>

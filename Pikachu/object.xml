@@ -22,8 +22,6 @@
     <actor id="id464925" />
     <actor id="id478313" />
     <actor id="id669103" />
-    <actor id="id973115" />
-    <actor id="id330648" />
     <actor id="id898340" />
     <actor id="id192023" />
     <actor id="id742336" />
@@ -36,6 +34,8 @@
     <actor id="id199949" />
     <actor id="id925807" />
     <actor id="id604642" />
+    <actor id="id330648" />
+    <actor id="id973115" />
   </prototypes>
   <plugins />
   <scenes>

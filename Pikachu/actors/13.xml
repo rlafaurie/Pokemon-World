@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<actor id="id176263" PGFVersion="0.19" GSCVersion="0.10.4">
+<actor id="id795389" PGFVersion="0.19" GSCVersion="0.10.4">
   <attributes>
-    <text id="name">Lose</text>
+    <text id="name">Choose Pikachu</text>
     <real id="time">0</real>
     <point id="position">
       <real id="x">0</real>
@@ -23,22 +23,53 @@
     <boolean id="preloadArt">true</boolean>
   </attributes>
   <behaviors>
-    <behavior id="id366481" class="DisplayTextBehavior" enabled="true">
+    <behavior id="id797018" class="DisplayTextBehavior" enabled="true">
       <attributes>
         <text id="name">Display Text</text>
         <text id="bundleName">DisplayText.behavior</text>
-        <text id="text">YOU LOSE</text>
+        <text id="text">Squirtle</text>
         <text id="font">Arial</text>
-        <real id="size">45</real>
+        <real id="size">30</real>
         <index id="alignment">1</index>
         <boolean id="wrap">false</boolean>
         <color id="color">
-          <real id="red">1</real>
-          <real id="green">1</real>
-          <real id="blue">1</real>
+          <real id="red">0.0235294117647059</real>
+          <real id="green">0.0235294117647059</real>
+          <real id="blue">0.0235294117647059</real>
           <real id="alpha">1</real>
         </color>
       </attributes>
+    </behavior>
+    <behavior id="id610640" class="RuleBehavior" enabled="true">
+      <attributes>
+        <text id="name">Rule</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">0</real>
+      </attributes>
+      <conditions>
+        <condition id="id311805" eventType="key" pluginPredicateTypeIndex="0" class="Key">
+          <attributes>
+            <text id="name">default name</text>
+            <index id="conditionType">0</index>
+          </attributes>
+          <predicate type="key">
+            <attributes>
+              <text id="mode">down</text>
+              <text id="keyString">left</text>
+            </attributes>
+          </predicate>
+        </condition>
+      </conditions>
+      <behaviors>
+        <behavior id="id371138" class="ChangeSceneAction" enabled="true">
+          <attributes>
+            <text id="name">Change Scene</text>
+            <text id="bundleName">ChangeScene.behavior</text>
+            <text id="sceneKey">id537928</text>
+            <boolean id="enableAdvertisement">false</boolean>
+          </attributes>
+        </behavior>
+      </behaviors>
     </behavior>
   </behaviors>
   <aspects>
